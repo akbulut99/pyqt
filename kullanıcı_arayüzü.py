@@ -1,8 +1,6 @@
 import sys
 from PyQt5 import QtWidgets
 import sqlite3
-
-
 class pencere(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
