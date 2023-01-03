@@ -22,7 +22,13 @@ class pencere(QtWidgets.QWidget):
      h_box.addLayout(v_box)
      h_box.addStretch()
      self.setLayout(h_box)
+     self.buton.clicked.connect(self.click)#butona tıklandığında yapılacak eylem
      self.show()
+    def click(self):
+        self.say += 1
+        self.yazı_alanı.setText("bana "+str(self.say)+" kere tıklandı")
+
+
 
 app = QtWidgets.QApplication(sys.argv)
 pencere = pencere()
